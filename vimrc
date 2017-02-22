@@ -65,8 +65,9 @@ filetype plugin indent on    " required
 """"""" -- MAPPING -- """"""
 :imap jk <Esc>
 
-""""""" -- COLOR SHIT -- """"""
-"set termguicolors
+""""""" -- CHANGE CURSOR -- """"""
+:let $NVIM_TUI_ENABLE_CURSOR_SHAPE=1
+
 
 syntax enable
 colorscheme koe
