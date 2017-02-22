@@ -1,0 +1,6 @@
+kwmc rule properties={float="true"} owner="App Store"
+kwmc rule properties={float="true"} owner="Xcode"
+kwmc rule properties={float="true"} name="Preferences"
+kwmc rule properties={float="true"} name="Messages"
+kwmc rule owner="iTerm2" properties={role="AXDialog"}
+kwmc rule owner="Emacs" properties={role="AXDialog"}
