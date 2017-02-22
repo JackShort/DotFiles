@@ -1,0 +1,8 @@
+let g:netrw_dirhistmax  =10
+let g:netrw_dirhist_cnt =6
+let g:netrw_dirhist_1='/Users/jackshort/.kwm'
+let g:netrw_dirhist_2='/Users/jackshort/.emacs.d'
+let g:netrw_dirhist_3='/Users/jackshort/.emacs.d/assets'
+let g:netrw_dirhist_4='/Users/jackshort/.emacs.d/elpa'
+let g:netrw_dirhist_5='/Users/jackshort/.emacs.d/elpa/archives'
+let g:netrw_dirhist_6='/Users/jackshort/.emacs.d'
