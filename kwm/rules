@@ -3,6 +3,11 @@ kwmc rule properties={float="true"} owner="Xcode"
 kwmc rule properties={float="true"} owner="Preferences"
 kwmc rule properties={float="true"} owner="Messages"
 kwmc rule properties={float="true"} owner="Unity"
+kwmc rule properties={float="true"} owner="Finder"
+kwmc rule properties={float="true"} owner="Numi"
+kwmc rule properties={float="true"} owner="Visual Studio Code"
+kwmc rule properties={float="true"} owner="Slack"
 
 kwmc rule owner="iTerm2" properties={role="AXDialog"}
+kwmc rule owner="Numi" properties={role="AXDialog"}
 kwmc rule owner="Emacs" properties={role="AXDialog"}
