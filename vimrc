@@ -65,9 +65,16 @@ filetype plugin indent on    " required
 """"""" -- MAPPING -- """"""
 :imap jk <Esc>
 
-""""""" -- CHANGE CURSOR -- """"""
+""""""" -- ALL ASTHETICS CHANGES -- """"""
+" Change cursor on indent
 :let $NVIM_TUI_ENABLE_CURSOR_SHAPE=1
 
+" Airline Theme
+:let g:airline_theme='kolor'
+
+""""""" -- System Configuration -- """"""
+"No beeps
+set noerrorbells
 
 syntax enable
 colorscheme koe
