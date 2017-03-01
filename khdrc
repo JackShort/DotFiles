@@ -2,13 +2,13 @@
 khd kwm on
 
 # set color of default mode
-khd mode default color 0xFF2ABB9C
+khd mode default color 0xFFF27EC2
 
 # Enable the prefix mode
 khd mode prefix prefix on
 khd mode prefix timeout 0.75
 khd mode prefix restore default
-khd mode prefix color 0xFFF27EC2
+khd mode prefix color 0xFF2ABB9C
 
 # Activate prefix mode
 ctrl - s                 :    khd -e "mode activate prefix"
