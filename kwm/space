@@ -1,5 +1,5 @@
 kwmc config space 0 1 name spotify
 kwmc config space 0 2 name main
-kwmc config space 0 3 name terminal
-kwmc config space 0 4 name emacs
+kwmc config space 0 3 name emacs
+kwmc config space 0 4 name terminal
 kwmc config space 0 5 name design
