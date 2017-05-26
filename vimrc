@@ -63,6 +63,9 @@ Plugin 'mattn/emmet-vim'
 "gruvbox: theme
 Plugin 'morhetz/gruvbox'
 
+"dracula: theme
+Plugin 'dracula/vim'
+
 " All of your Plugins must be added before the following line
 call vundle#end()            " required
 filetype plugin indent on    " required
@@ -87,7 +90,7 @@ filetype plugin indent on    " required
 :let $NVIM_TUI_ENABLE_CURSOR_SHAPE=1
 
 " Airline Theme
-:let g:airline_theme='gruvbox'
+:let g:airline_theme='dracula'
 
 set background=dark                   " set background color to dark
 set colorcolumn=100                   " show a column at 100 chars
@@ -153,7 +156,7 @@ if !&readonly && &modifiable
 endif
 set encoding=utf-8                    " the encoding displayed
 
-colorscheme gruvbox                   " set color scheme
+colorscheme dracula                   " set color scheme
 
 """"""" -- KEYS -- """"""
 let g:ctrlp_map = '<c-p>'

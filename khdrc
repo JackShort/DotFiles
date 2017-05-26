@@ -2,13 +2,13 @@
 khd kwm on
 
 # set color of default mode
-khd mode default color 0xFF2ABB9C
+khd mode default color 0xFF9DEDFC
 
 # Enable the prefix mode
 khd mode prefix prefix on
 khd mode prefix timeout 0.75
 khd mode prefix restore default
-khd mode prefix color 0xFFF27EC2
+khd mode prefix color 0xFFFF79C6
 
 # Activate prefix mode
 ctrl - s                 :    khd -e "mode activate prefix"
@@ -17,7 +17,7 @@ ctrl - s                 :    khd -e "mode activate prefix"
 cmd + alt + ctrl - q     :    kwmc quit
 
 # Launch iTerm2
-cmd - return             :    open -na /Applications/iTerm2.app
+cmd - return             :    open -nw /Applications/iTerm2.app
 
 # Set Space Tiling Mode To BSP
 cmd + ctrl - a           :    kwmc space -t bsp
@@ -58,13 +58,13 @@ cmd + alt + ctrl - j     :    kwmc window -mk south wrap
 cmd + alt + ctrl - k     :    kwmc window -mk north wrap
 
 # Give Focus To Window
-cmd + alt - h            :    kwmc window -f west
-cmd + alt - l            :    kwmc window -f east
-cmd + alt - j            :    kwmc window -f south
-cmd + alt - k            :    kwmc window -f north
+alt - h            :    kwmc window -f west
+alt - l            :    kwmc window -f east
+alt - j            :    kwmc window -f south
+alt - k            :    kwmc window -f north
 
-cmd + alt - n            :    kwmc window -fm prev
-cmd + alt - m            :    kwmc window -fm next
+alt - n            :    kwmc window -fm prev
+alt - m            :    kwmc window -fm next
 
 # Give Focus To Screen
 cmd + alt - 1            :    kwmc display -f 0
@@ -85,10 +85,10 @@ ctrl + alt - p           :    kwmc window -s prev
 ctrl + alt - n           :    kwmc window -s next
 
 # Detach Focused Window And Reinsert In Direction
-ctrl + shift - k         :    kwmc window -m north
-ctrl + shift - l         :    kwmc window -m east
-ctrl + shift - j         :    kwmc window -m south
-ctrl + shift - h         :    kwmc window -m west
+#ctrl + shift - k         :    kwmc window -m north
+#ctrl + shift - l         :    kwmc window -m east
+#ctrl + shift - j         :    kwmc window -m south
+#ctrl + shift - h         :    kwmc window -m west
 
 # Detach Marked Window And Reinsert At Focused Window
 ctrl + shift - x         :    kwmc window -m mark
