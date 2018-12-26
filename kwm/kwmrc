@@ -1,8 +1,8 @@
 # Set default values for screen padding
-kwmc config padding 15 30 10 10
+kwmc config padding 10 30 10 10
 
 # Set default values for container gaps
-kwmc config gap 5 5
+kwmc config gap 0 0
 
 # Default tiling mode for Kwm (bsp | monocle | float)
 kwmc config tiling bsp
@@ -54,14 +54,14 @@ kwmc config optimal-ratio 1.605
 kwmc config spawn left
 
 # Enable border for focused window
-kwmc config border focused on
-kwmc config border focused size 3
-kwmc config border focused color 0xFF9DEDFC
-kwmc config border focused radius 0
+#kwmc config border focused on
+#kwmc config border focused size 2
+#kwmc config border focused color 0xFF00ED9F
+#kwmc config border focused radius 0
 
 # Enable border for marked window
 kwmc config border marked on
-kwmc config border marked size 3
+kwmc config border marked size 2
 kwmc config border marked color 0xFFFF79C6
 kwmc config border marked radius 0
 

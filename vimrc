@@ -9,8 +9,7 @@ filetype off                  " required
 " set the runtime path to include Vundle and initialize
 set rtp+=~/.vim/bundle/Vundle.vim
 call vundle#begin()
-" alternatively, pass a path where Vundle should install plugins
-"call vundle#begin('~/some/path/here')
+" alternatively, pass a path where Vundle should install plugins call vundle#begin('~/some/path/here')
 
 " let Vundle manage Vundle, required
 Plugin 'VundleVim/Vundle.vim'
@@ -52,10 +51,8 @@ Plugin 'ervandew/supertab'
 "AutoPairs: pair completion
 Plugin 'jiangmiao/auto-pairs'
 
-
 "EasyMotion: Basically shortcuts
 Plugin 'easymotion/vim-easymotion'
-
 
 "Emmet: Web Completion
 Plugin 'mattn/emmet-vim'
@@ -63,8 +60,43 @@ Plugin 'mattn/emmet-vim'
 "gruvbox: theme
 Plugin 'morhetz/gruvbox'
 
+"vice: theme
+Plugin 'bcicen/vim-vice'
+
+"base16: theme
+Plugin 'chriskempson/base16-vim'
+
 "dracula: theme
 Plugin 'dracula/vim'
+
+"Live Preview: Latex
+Plugin 'xuhdev/vim-latex-live-preview'
+
+"OrgMode: Org mode in vim
+Plugin 'jceb/vim-orgmode'
+
+"Speeddating: makes vim faster
+Plugin 'tpope/vim-speeddating'
+
+"SyntaxRange
+Plugin 'SyntaxRange'
+
+Plugin 'pangloss/vim-javascript'
+Plugin 'mxw/vim-jsx'
+
+"Javascript shit
+Plugin 'jelera/vim-javascript-syntax'
+
+"beautify
+Plugin 'maksimr/vim-jsbeautify'
+
+" snippet shit
+Plugin 'MarcWeber/vim-addon-mw-utils'
+Plugin 'tomtom/tlib_vim'
+Plugin 'garbas/vim-snipmate'
+Plugin 'honza/vim-snippets'
+
+Plugin 'skywind3000/asyncrun.vim'
 
 " All of your Plugins must be added before the following line
 call vundle#end()            " required
@@ -156,24 +188,34 @@ if !&readonly && &modifiable
 endif
 set encoding=utf-8                    " the encoding displayed
 
-colorscheme dracula                   " set color scheme
+"colorscheme dracula                  " set color scheme
+colorscheme molokai                   " set color scheme
 
 """"""" -- KEYS -- """"""
 let g:ctrlp_map = '<c-p>'
 let g:ctrlp_cmd = 'CtrlP'
 
 let mapleader=" "
+let maplocalleader=" "
 
 " EASY MOTION STUFF
 let g:EasyMotion_do_mapping = 0 " Disable default mappings
-nmap s <Plug>(easymotion-overwin-f)
-nmap s <Plug>(easymotion-overwin-f2)
+nmap q <Plug>(easymotion-overwin-f)
+nmap q <Plug>(easymotion-overwin-f2)
 let g:EasyMotion_smartcase = 1
 map <Leader>j <Plug>(easymotion-j)
 map <Leader>k <Plug>(easymotion-k)
 
+let g:livepreview_previewer = 'open -a Preview'
+
 " EMMET STUFF
-let g:user_emmet_leader_key=','
+"let g:user_emmet_leader_key='.'
+"let g:user_emmet_leader_key='<Tab>'
+let g:user_emmet_settings = {
+  \  'javascript.jsx' : {
+    \      'extends' : 'jsx',
+    \  },
+  \}
 
 syntax enable
 filetype plugin indent on
